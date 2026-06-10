@@ -307,8 +307,9 @@ const CT_SETTINGS_STORAGE_KEY = 'litepan:cross-transfer:settings'
 const CT_PROBE_NOTICE_KEY = 'litepan:cross-transfer:probe-notice-dismissed'
 const FOOTER_TIP_INTERVAL_MS = 6000
 const footerScrollTips = [
-  { text: '建议每次只选一部影片、一季或少量文件夹，子目录多请分批传输。' },
   { text: '先试探可避免覆盖误操作；临时目录结束后自动清理。点击查看说明。', action: 'probe-notice' },
+  { text: '建议每次只选一部影片、一季或少量文件夹，子目录多请分批传输。' },
+  { text: '大部分网盘接口不返回sha1或其他哈希值，暂时无法匹配秒传方案。' },
 ]
 
 const routes = ref([])

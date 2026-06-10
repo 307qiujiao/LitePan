@@ -555,7 +555,7 @@ class BaiduOpenDriver(BaseDriver):
             return OperationResult(success=False, message="暂不支持上传空文件")
 
         normalized_parent_path = self._normalize_path(parent_path)
-        cache_parent_id = "0" if normalized_parent_path == self._get_root_path() else normalized_parent_path
+        cache_parent_id = normalized_parent_path
         target_path = self._build_child_path(normalized_parent_path, target_name)
         temp_path = ""
 
@@ -621,7 +621,7 @@ class BaiduOpenDriver(BaseDriver):
             return OperationResult(success=False, message="待上传文件不存在")
 
         normalized_parent_path = self._normalize_path(parent_path)
-        cache_parent_id = "0" if normalized_parent_path == self._get_root_path() else normalized_parent_path
+        cache_parent_id = normalized_parent_path
         target_path = self._build_child_path(normalized_parent_path, target_name)
 
         try:
@@ -686,7 +686,7 @@ class BaiduOpenDriver(BaseDriver):
             return OperationResult(success=False, message="待上传文件不存在")
 
         normalized_parent_path = self._normalize_path(parent_path)
-        cache_parent_id = "0" if normalized_parent_path == self._get_root_path() else normalized_parent_path
+        cache_parent_id = normalized_parent_path
         target_path = self._build_child_path(normalized_parent_path, target_name)
 
         try:

@@ -522,6 +522,12 @@ class Pan123OpenDriver(BaseDriver):
                 },
             )
         except Exception as e:
+            if "不能复制目录" in str(e):
+                return OperationResult(
+                    success=False,
+                    message="123云盘官方Open接口暂不支持复制文件夹",
+                    data={"warning": True},
+                )
             return OperationResult(success=False, message=f"复制失败: {str(e)}")
 
     async def batch_copy_file(self, file_ids: List[str], target_parent_id: str) -> OperationResult:

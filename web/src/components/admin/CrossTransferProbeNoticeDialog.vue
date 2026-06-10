@@ -27,7 +27,7 @@
     <div class="notice-tips">
       <div class="notice-tip">
         <span class="notice-tip-bar" aria-hidden="true"></span>
-        <span>先试探可确认哪些文件能秒传；若直接传输且选了「覆盖」，误覆盖后无法撤销。</span>
+        <span>先试探哪些文件能秒传；若直接传输且选了「覆盖」，误覆盖后无法撤销。</span>
       </div>
       <div class="notice-tip">
         <span class="notice-tip-bar" aria-hidden="true"></span>
@@ -35,7 +35,7 @@
       </div>
       <div class="notice-tip">
         <span class="notice-tip-bar" aria-hidden="true"></span>
-        <span>试探结束后自动删除临时目录，删除后可能留在回收站，请用官方客户端清空。</span>
+        <span>试探结束后自动删除临时目录，删除后可能留在回收站，请及时清空回收站。</span>
       </div>
     </div>
 
